@@ -226,18 +226,57 @@
           <button onclick="backStepFour()" class="nextStep">Next Step</button>
         </div>
       </div>
+
+      <!--summary-->
+      <div class="stepSummary" id="stepSummary">
+        <h1>Finishing Up</h1>
+        <p class="description">
+          Double-check everything looks OK before confirming.
+        </p>
+        <div class="resume">
+          <div class="containerResume">
+            <div id="resumeMonth">
+              <div class="flexResume">
+                <div>
+                  <h4 id="modeResume">Choose a plan </h4>
+                  <button onclick="goFromFourToTwo()">Change</button>
+                </div>
+                <label for="" id="priceResume"></label>
+              </div>
+              <br>
+              <span></span>
+              <div class="flexResume">
+                <p>Online service</p>
+                <label for="" id="onlinePrice">+0$</label>
+              </div>
+              <div class="flexResume">
+                <p>Larger storage</p>
+                <label for="" id="storagePrice">+0$</label>
+              </div>
+              <div class="flexResume">
+                <p>Customizable profile</p>
+                <label for="" id="customizablePrice">+0$</label>
+              </div>
+            </div>
+          </div>
+          <div class="flexTotal">
+            <p id="modTotal">Total</p>
+            <span id="totalPrice"></span>
+            <span class="dollar">$</span>
+          </div>
+          <div class="buttonContainerStepFour">
+            <button onclick="backStepThree()" class="goBack">Go Back</button>
+            <button onclick="goToStepThankYou()" class="nextStep">Confirm</button>
+          </div>
+        </div>
+      </div>
+
+      <!--Thank you section-->
+      <div class="stepThankYou">
+        
+      </div>
     </div>
   </div>
-
-  Go Back
-  Next Step
-
-  <!-- Step 3 end -->
-
-  <!-- Step 4 start -->
-
-  Finishing up
-  Double-check everything looks OK before confirming.
 
   <!-- Dynamically add subscription and add-on selections here -->
 
