@@ -78,43 +78,156 @@
 
         </div>
       </div>
-     
+      <!-- Select your plan -->
+      <div class="stepPlan" id="stepPlan">
+        <h>Select your Plan</h>
+        <p class="description">
+          You have the option of monthly or yearly billing.
+        </p>
+
+        <div class="planMonth" id="planMonth">
+          <button class="planButton" id="moisArcade" onclick="getPrice1()">
+            <img src="./assets/images/icon-arcade.svg" alt="">
+            <p>Arcade</p>
+            <span class="priceMonth" id="priceMonth">$9/mo</span>
+          </button>
+          <button class="planButton" id="moisArcade" onclick="getPrice1()">
+            <img src="./assets/images/icon-advanced.svg" alt="">
+            <p>Advanced</p>
+            <span class="priceMonth" id="priceMonth">$12/mo</span>
+          </button>
+          <button class="planButton" id="moisArcade" onclick="getPrice1()">
+            <img src="./assets/images/icon-pro.svg" alt="">
+            <p> Pro</p>
+            <span class="priceMonth" id="priceMonth">$15/mo</span>
+          </button>
+        </div>
+
+        <div class="planMonth" id="planYear">
+          <button class="planButton" id="anneeArcade" onclick="getPrice4">
+            <img src="./assets/images/icon-arcade.svg" alt="">
+            <p>Arcade</p>
+            <span class="priceYear"> $90/yr</span>
+            <label for="" class="free">2 months free</label>
+          </button>
+          <button class="planButton" id="anneeAdvanced" onclick="getPrice5">
+            <img src="./assets/images/icon-advanced.svg" alt="">
+            <p>Advanced</p>
+            <span class="priceYear">$120/yr</span>
+            <label for="" class="free">2 months free</label> 
+          </button>
+          <button class="planButton" id="anneeArcade" onclick="getPrice6">
+            <img src="./assets/images/icon-pro.svg" alt="">
+            <p>Pro</p>
+            <span class="priceYear">$150/yr</span>
+            <label for="" class="free">2 months free</label>
+          </button>
+        </div>
+        <div class="switch">
+          <p class="monthly">  Monthly</p>
+
+          <label for="" class="check">
+            <input type="checkbox" name="" id="switch" id="checkbox" onclick="reset()">
+            <span></span>
+          </label>
+          <p class="yearly"> Yearly</p>
+        </div>
+        <div class="buttonContainerStepTwo">
+          <button onclick="backStepOne()" class="goBack">Go Back</button>
+          <button onclick="backStepThree()" class="nextStep">Next Step</button>
+        </div>
+      </div>
+
+      <!--ADD ON-->
+      <div class="stepAddOn" id="stepAddOn">
+        <h1>  Pick add-ons</h1>
+        <p class="description">
+          Add-ons help enhance your gaming experience.
+        </p>
+        <div id="addonMois">
+
+          <div class="addOnButton">
+            <div class="regroup">
+            <input type="checkbox" name="addOn" id="onlineMois" value="1">
+            <div class="addOn">
+              <p class="addSize">Online service</p>
+              <span>Access to multiplayer games</span>
+            </div>
+          </div>
+          <p class="prix"> +$1/yr</p>
+          </div>
+
+          <div class="addOnButton">
+            <div class="regroup">
+            <input type="checkbox" name="addOn" id="storageMois" value="2">
+            <div class="addOn">
+              <p class="addSize">Larger storage</p>
+              <span>Extra 1TB of cloud save</span>
+            </div>
+          </div>
+          <p class="prix"> +$2/mo</p>
+          </div>
+
+          <div class="addOnButton">
+            <div class="regroup">
+            <input type="checkbox" name="addOn" id="customizableMois" value="2">
+            <div class="addOn">
+              <p class="addSize">Customizable Profile</p>
+              <span>Custom theme on your profile</span>
+            </div>
+          </div>
+          <p class="prix"> +$2/mo</p>
+          </div>
+
+        </div>
+
+        <!--year button-->
+
+
+        <div id="addonAnne">
+
+          <div class="addOnButton">
+            <div class="regroup">
+            <input type="checkbox" name="addOn" id="onlineAnne" value="10">
+            <div class="addOn">
+              <p class="addSize">Online service</p>
+              <span>Access to multiplayer games</span>
+            </div>
+          </div>
+          <p class="prix"> +$10/yr</p>
+          </div>
+
+          <div class="addOnButton">
+            <div class="regroup">
+            <input type="checkbox" name="addOn" id="storageAnne" value="20">
+            <div class="addOn">
+              <p class="addSize">Larger storage</p>
+              <span>Extra 1TB of cloud save</span>
+            </div>
+          </div>
+          <p class="prix"> +$20/yr</p>
+          </div>
+
+          <div class="addOnButton">
+            <div class="regroup">
+            <input type="checkbox" name="addOn" id="customizableAnne" value="20">
+            <div class="addOn">
+              <p class="addSize">Customizable Profile</p>
+              <span>Custom theme on your profile</span>
+            </div>
+          </div>
+          <p class="prix"> +$20/yr</p>
+          </div>
+
+        </div>
+
+        <div class="buttonContainerStepThree">
+          <button onclick="backStepTwo()" class="goBack">Go Back</button>
+          <button onclick="backStepFour()" class="nextStep">Next Step</button>
+        </div>
+      </div>
     </div>
   </div>
-
-  Arcade
-  $9/mo
-
-  Advanced
-  $12/mo
-
-  Pro
-  $15/mo
-
-  Monthly
-  Yearly
-
-  Go Back
-  Next Step
-
-  <!-- Step 2 end -->
-
-  <!-- Step 3 start -->
-
-  Pick add-ons
-  Add-ons help enhance your gaming experience.
-
-  Online service
-  Access to multiplayer games
-  +$1/mo
-
-  Larger storage
-  Extra 1TB of cloud save
-  +$2/mo
-
-  Customizable Profile
-  Custom theme on your profile
-  +$2/mo
 
   Go Back
   Next Step
