@@ -1,0 +1,199 @@
+body {  font-family: "Ubuntu", sans-serif;
+    margin: 0;  background-color: hsl(229, 24%, 87%);}
+  
+  button {  font-family: "Ubuntu", sans-serif;}
+
+.container{
+    display: flex;
+    background-color: rgb(255,255,255);
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(47,18,18,0.101);
+    width: 1000px;
+    height: 586px;
+}
+
+.displayStep{
+    display: flex;
+    justify-content: center;
+    width: 274px;
+    height: 568px;
+    background-color: rgba(30,16,186,0);
+    background-image: url(./assets/images/bg-sidebar-desktop.svg);
+}
+
+.circle{
+    position: relative;
+    background-color: rgba(220,20,60,0);
+    width: 20%;
+    color: white;
+    font-weight: 500;
+    height: 50%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle p{
+    margin-top: 10px;
+}
+
+.circle1{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(255,255,255);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.circle2{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(0,0,0,0);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.circle3{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(0,0,0,0);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.circle4{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(0,0,0,0);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.steps{
+    position: relative;
+    background-color: rgba(255,255,0,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 50%;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+.step1{
+    position: inherit;
+    padding-left: 5px;
+    background-color: rgba(156,55,55,0);
+}
+
+.steps p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 14px;
+    color: hsl(228, 8%, 25%);
+}
+
+.steps span{
+    color: white;
+}
+
+.stepContainer{
+    background-color: rgba(210,96,14,0);
+    width: 50%;
+    height: 550px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+#stepInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+#stepPlan{
+    display: none;
+    flex-direction: column;
+}
+
+#stepAddOn{
+    display: none;
+    flex-direction: column;
+}
+
+#stepSummary{
+    display: none;
+    flex-direction: column;
+}
+
+#stepThankYou{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+#stepThankYou img{
+    width: 80px;
+}
+
+#stepInfo input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px rgba(103,92,92,0.628);
+}
+
+.buttonContainerStepOne{
+    position: relative;
+    background-color: rgba(0,255,51,0);
+    padding-left: 380px;
+    padding-top: 73px;
+}
+
+.buttonContainerStepTwo{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,255,51,0);
+    padding-top: 75px;
+
+}
+
+.buttonContainerStepThree{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,255,51,0);
+    padding-top: 80px;
+}
+
+.buttonContainerStepFour{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,255,51,0);
+    padding-top: 39px;
+}
+
+.nextStep{
+    padding: 15px 20px 15px 20px;
+    width: 120px;
+    background-color: hsl(213, 96%,18%);
+    color: white;
+    border-radius: 5px;
+    border: solid 1px rgba(0,0,255,0);
+}
